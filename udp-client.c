@@ -62,10 +62,10 @@ static
 PT_THREAD(cmd_attack(struct pt *pt, shell_output_func output, char *args))
 {
   PT_BEGIN(pt);
-  SHELL_OUTPUT(output, "SINK HOLE ATTACK IS STARTED!\n");
+  SHELL_OUTPUT(output, "blackhole ATTACK IS STARTED!\n");
   icmp6_stats_sink_hole = true;
   icmp6_stats_drop_fwd_udp = true;
-  rpl_timers_dio_reset("SINK HOLE ATTACK IS STARTED!");
+  rpl_timers_dio_reset("blackhole ATTACK IS STARTED!");
   PT_END(pt);
 }
 static
